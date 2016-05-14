@@ -1,0 +1,16 @@
+
+<div class='pagination' ng-if='tableConfig.pagingConfig.enabled'>
+    <table class="pull-right">
+        <tr>
+            <td>
+                <img class="img_enabled" ng-click="tableConfig.showPrevPage()" ng-if='tableConfig.pagingConfig.currentPage > 1' src='./client/table/assets/images/Previous.png' />
+                <img class="img_disabled" ng-if='tableConfig.pagingConfig.currentPage === 1' src='./client/table/assets/images/disabled_Prev.png' />
+            </td>
+            <td><div>Page {{tableConfig.pagingConfig.currentPage}} of {{tableConfig.pagingConfig.totalPages}}</div></td>
+            <td>
+                <img class="img_enabled" ng-click="tableConfig.showNextPage()" src='./client/table/assets/images/next.jpg' ng-if='tableConfig.pagingConfig.currentPage < tableConfig.pagingConfig.totalPages' />
+                <img class="img_disabled" src='./client/table/assets/images/disabled_Next.png' ng-if='tableConfig.pagingConfig.currentPage === tableConfig.pagingConfig.totalPages' />
+            </td>
+        </tr>
+    </table>
+</div>

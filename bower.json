@@ -1,0 +1,23 @@
+{
+  "name": "NgLovesES6",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.3",
+    "system.js": "^0.19.25",
+    "babel": "*",
+    "jquery": "^2.2.3",
+    "plugin-text": "systemjs/plugin-text#^0.0.7",
+    "plugin-css": "systemjs/plugin-css#^0.1.20"
+  }
+}
