@@ -1,0 +1,38 @@
+.myTable .maintable {    
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.myTable .maintable th {
+        background-color: #4CAF50;
+        color: white;
+        border: 1px solid black;
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;    }
+
+.myTable .maintable td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+    }
+.myTable .maintable tr:nth-child(even) {background-color: #f2f2f2}
+
+.myTable .pagination {
+    margin: auto;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle
+}
+
+.myTable .pagination .img_enabled{
+    height: 28px;
+    width:28px;
+    cursor: pointer;
+}
+
+.myTable .pagination .img_disabled{
+    height: 28px;
+    width:28px;
+}

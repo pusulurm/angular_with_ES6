@@ -1,0 +1,16 @@
+<div>
+    <table class="maintable">
+        <thead>
+            <tr>
+                <th ng-repeat="colName in tableConfig.dataColumns">{{colName.displayValue}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in tableConfig.data">
+                <td ng-repeat="dataField in tableConfig.dataColumns">{{row[dataField.field]}}
+                </td>
+            </tr>
+        </tbody>
+    </table>    
+    <pagination pagingConfig="tableConfig.pagingConfig"></pagination>
+</div>
