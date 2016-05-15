@@ -6,6 +6,7 @@ bin
 obj
 coverage
 fonts
+dist/
 node_modules
 packages
 reports
