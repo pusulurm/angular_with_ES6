@@ -1,0 +1,23 @@
+<script>
+        System.config({
+            baseURL : "/",
+            defaultJSExtensions: true,
+            transpiler : 'babel',
+            map : {
+                "angular" : "bower_components/angular/angular",                
+                "css" : "client/lib/css",                
+                "mainCss" : "client/table/assets/css/table.css"
+            },
+            meta : {
+                "bower_components/angular/angular"  : {
+                    "format": "global",
+                    "exports": "angular"
+                }
+            }
+        });    
+        System.import('app').then(function(){
+            System.import('dist/main').then(function(){
+                console.log('loaded..!');
+            })            
+        });
+</script>

@@ -1,0 +1,4 @@
+import angular from 'angular';
+
+let templatesModName = "table.templates";
+angular.module('table.templates', []);

@@ -3,19 +3,19 @@
     <title>Es6 and Angular Sample app</title>
 </head>
 <body>    
-    <script type="text/javascript" src="bower_components/system.js/dist/system.src.js"></script>
+    <script type="text/javascript" src="client/lib/system.js"></script>
+    <!-- @exclude -->
     <script>
         System.config({
             baseURL : "/",
             defaultJSExtensions: true,
             transpiler : 'babel',
             map : {
-                "angular" : "bower_components/angular/angular",
-                "jquery" : "bower_components/jquery/dist/jquery",
-                "text" : "bower_components/plugin-text/text",
-                "css" : "bower_components/plugin-css/css",
-                "babel" : "bower_components/babel/browser.js",
-                "main" : "client/main"
+                "angular" : "bower_components/angular/angular",                
+                "css" : "client/lib/css",
+                "babel" : "bower_components/babel/browser",
+                "main" : "client/main",
+                "mainCss" : "client/table/assets/css/table.css"
             },
             meta : {
                 "bower_components/angular/angular"  : {
@@ -28,6 +28,8 @@
             console.log('loaded..!');
         });
     </script>
+    <!-- @endexclude -->
+    <!-- @include include.html -->
     <div ng-controller="tableDemoController as tblDemo">
         <h2>Table Demo</h2>
         <my-table config = "tblDemo.config"></my-table>
